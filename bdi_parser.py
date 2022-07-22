@@ -16,9 +16,10 @@ class BoletimDiario():
             Defaults como datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d'), que implica o dia anterior ao da requisição.
         """
         self.dicio          = {
-            'resumo': 'BDI_01_',
-            'maiores_oscilacoes': 'BDI_01-1',
-            'url_base': 'https://up2dataweb.blob.core.windows.net/bdi/'
+            'resumo'            : 'BDI_01_',
+            'maiores_oscilacoes': 'BDI_01-1_',
+            'after_market'      : 'BDI_03-3_',
+            'url_base'          : 'https://up2dataweb.blob.core.windows.net/bdi/'
         }
         self.date            = date
         self.capitulo        = capitulo
